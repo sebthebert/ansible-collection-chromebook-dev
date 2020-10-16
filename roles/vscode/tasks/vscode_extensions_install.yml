@@ -1,0 +1,9 @@
+---
+- name: vscode - Install VS Code extensions
+  shell: "code --install-extension {{ item }}"
+  become: no
+  register: result
+  when:
+    - vscode_extensions is defined
+  loop: "{{ vscode_extensions }}"
+  changed_when: result.stdout is not search('is already installed.')

@@ -12,7 +12,6 @@
     owner: root
     mode: '0644'
 
-- name: vscode - Install VS Code
-  apt:
-    name: code
-    update_cache: true
+- import_tasks: vscode_install.yml
+
+- import_tasks: vscode_extensions_install.yml

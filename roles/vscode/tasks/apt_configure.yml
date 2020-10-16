@@ -1,0 +1,13 @@
+---
+- name: vscode - Set gpg key from '{{ vscode_gpg_key_url }}'
+  apt_key:
+    url: "{{ vscode_gpg_key_url }}"
+    state: present
+
+- name: vscode - Add VS Code repository to apt sources lists
+  copy:
+    content: "deb [arch=amd64] {{ vscode_repo_url }} stable main"
+    dest: /etc/apt/sources.list.d/vscode.list
+    group: root
+    owner: root
+    mode: '0644'
