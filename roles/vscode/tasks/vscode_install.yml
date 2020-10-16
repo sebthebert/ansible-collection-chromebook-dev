@@ -1,0 +1,5 @@
+---
+- name: vscode - Install VS Code
+  apt:
+    name: code
+    update_cache: true
