@@ -34,3 +34,9 @@ mkdir github
 cd github
 git clone https://github.com/sebthebert/ansible-collection-chromebook-dev.git
 ```
+
+Launch the playbook :
+
+```shell
+ansible-playbook -e docker_user=$USER install.yml
+``` 
