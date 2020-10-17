@@ -1,0 +1,8 @@
+---
+- name: docker - Install required packages
+  apt:
+    name:
+      - apt-transport-https
+      - ca-certificates
+      - gnupg2
+    state: present

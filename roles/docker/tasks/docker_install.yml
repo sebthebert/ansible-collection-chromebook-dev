@@ -1,0 +1,12 @@
+---
+- name: docker - Install Docker
+  package:
+    name: "{{ docker_package }}"
+    state: present
+    update_cache: true
+
+- name: docker - Ensure Docker service is Started and Enabled
+  service:
+    name: docker
+    state: started
+    enabled: yes

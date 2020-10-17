@@ -1,0 +1,7 @@
+---
+docker_download_url: https://download.docker.com
+
+docker_apt_gpg_key_url: "{{ docker_download_url }}/linux/debian/gpg"
+docker_apt_repo_url: "{{ docker_download_url }}/linux/debian"
+
+docker_package: docker-ce

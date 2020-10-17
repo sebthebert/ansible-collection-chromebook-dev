@@ -1,0 +1,8 @@
+---
+- import_tasks: requirements.yml
+
+- import_tasks: apt_configure.yml
+
+- import_tasks: docker_install.yml
+
+- import_tasks: docker_user.yml

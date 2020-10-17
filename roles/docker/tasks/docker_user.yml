@@ -1,0 +1,7 @@
+---
+- name: docker - Add '{{ docker_user }}' to docker group members
+  user:
+    name: "{{ docker_user }}"
+    groups: docker
+    append: true
+  when: docker_user is defined

@@ -1,0 +1,19 @@
+---
+- name: docker - Set gpg key from '{{ docker_apt_gpg_key_url }}'
+  apt_key:
+    url: "{{ docker_apt_gpg_key_url }}"
+    state: present
+
+# - name: docker - Add Docker repository to apt sources lists
+#   copy:
+#     content: "deb [arch=amd64] {{ docker_apt_repo_url }} buster main"
+#     dest: /etc/apt/sources.list.d/docker.list
+#     group: root
+#     owner: root
+#     mode: '0644'
+
+- name: docker - Add Docker repository.
+  apt_repository:
+    repo: "deb [arch=amd64] {{ docker_apt_repo_url }} buster stable"
+    state: present
+    update_cache: true
