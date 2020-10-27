@@ -5,6 +5,7 @@ vscode_gpg_key_url: "{{ ms_packages_url }}/keys/microsoft.asc"
 vscode_repo_url: "{{ ms_packages_url }}/repos/vscode"
 
 vscode_extensions:
+  - ms-azuretools.vscode-docker
   - ms-python.python
   - redhat.vscode-yaml
   - vscoss.vscode-ansible
