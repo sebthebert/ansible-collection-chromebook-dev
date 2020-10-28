@@ -1,0 +1,8 @@
+---
+docker_compose_version: 1.27.4
+docker_compose_download_url: "https://github.com/docker/compose/releases/download/{{ docker_compose_version }}/docker-compose-Linux-x86_64"
+docker_compose_completion_download_url: "https://raw.githubusercontent.com/docker/compose/{{ docker_compose_version }}/contrib/completion/bash/docker-compose" 
+
+docker_compose_bin: "{{ local_bin_dir }}/docker-compose"
+docker_compose_completion_file: /etc/bash_completion.d/docker-compose
+local_bin_dir: /usr/local/bin

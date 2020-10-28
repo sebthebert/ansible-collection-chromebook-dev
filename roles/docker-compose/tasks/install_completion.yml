@@ -1,0 +1,5 @@
+---
+- name: docker-compose - Install 'docker-compose' completion (from '{{ docker_compose_completion_download_url }}' to '{{ docker_compose_completion_file }}')
+  get_url:
+    url: "{{ docker_compose_completion_download_url }}"
+    dest: "{{ docker_compose_completion_file }}"

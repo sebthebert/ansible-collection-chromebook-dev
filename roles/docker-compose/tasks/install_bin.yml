@@ -1,0 +1,6 @@
+---
+- name: docker-compose - Install 'docker-compose' binary (from '{{ docker_compose_download_url }}' to '{{ docker_compose_bin }}')
+  get_url:
+    url: "{{ docker_compose_download_url }}"
+    dest: "{{ docker_compose_bin }}"
+    mode: '755'
