@@ -6,3 +6,4 @@
   roles:
     - vscode
     - docker
+    - docker-compose

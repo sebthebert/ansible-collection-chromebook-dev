@@ -1,0 +1,4 @@
+---
+- import_tasks: install_bin.yml
+
+- import_tasks: install_completion.yml
