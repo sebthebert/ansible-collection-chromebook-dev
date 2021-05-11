@@ -9,3 +9,4 @@ vscode_extensions:
   - ms-python.python
   - redhat.vscode-yaml
   - vscoss.vscode-ansible
+  - rangav.vscode-thunder-client
